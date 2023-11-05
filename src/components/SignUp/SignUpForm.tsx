@@ -45,6 +45,7 @@ const SignUpForm = () => {
         console.error("Error uploading file:", error);
       }
     }
+    console.log(imageUrl);
 
     try {
       await register({
@@ -179,7 +180,7 @@ const SignUpForm = () => {
         <Button
           type="submit"
           title="Submit"
-          className="mt-6 bg-primary w-full text-base font-medium rounded"
+          className="mt-6 bg-primary-100 w-full text-base font-medium rounded"
           icon={isLoading ? ICONS.button_loading_icon : undefined}
           isDisabled={isLoading}
         />
@@ -187,10 +188,8 @@ const SignUpForm = () => {
         <div>
           <p className={`font-inter text-base text-[#000] text-center `}>
             Already have an account?
-            <Link href={"/auth/signin"}>
-              <a className="ml-2  underline" href="">
-                Login
-              </a>
+            <Link href={"/login"}>
+              <span className="ml-2  underline">Login</span>
             </Link>
           </p>
         </div>

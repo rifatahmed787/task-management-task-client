@@ -12,7 +12,7 @@ export default function NotFound() {
 
   return (
     <>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center mt-28">
         <div>
           <h2>Something went wrong!</h2>
           <Link href={"/"}>

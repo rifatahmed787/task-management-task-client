@@ -66,14 +66,36 @@ const Navbar = () => {
 
             <li>
               <Link
-                href="/products"
+                href="/addtask"
                 className={`inline-block  hover:border-b-primary-200 ${
-                  pathname === "/products"
+                  pathname === "/addtask"
                     ? "  text-primary-100"
                     : "text-[#181818]"
                 }`}
               >
-                Products
+                Add Tasks
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/task"
+                className={`inline-block  hover:border-b-primary-200 ${
+                  pathname === "/task" ? "  text-primary-100" : "text-[#181818]"
+                }`}
+              >
+                Tasks
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/completetask"
+                className={`inline-block  hover:border-b-primary-200 ${
+                  pathname === "/completetask"
+                    ? "  text-primary-100"
+                    : "text-[#181818]"
+                }`}
+              >
+                Complete Task
               </Link>
             </li>
           </ul>

@@ -1,10 +1,11 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { usePathname } from "next/navigation";
 
 const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const pathname = usePathname();
   const toggleMenu = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
   };
@@ -52,14 +53,12 @@ const MobileNav = () => {
           >
             <div className="shadow-sm hover:text-primary mt-4 pl-5">
               <nav className="flex justify-between">
-                <ul className=" items-center gap-5 pl-4">
+                <ul className=" items-center gap-5 pl-4 space-y-5">
                   <li>
                     <Link
                       href="/"
                       className={`inline-block hover:border-b-primary-200 ${
-                        location.pathname === "/"
-                          ? "border-b-2 border-b-primary-200  py-2 text-black "
-                          : "text-[#181818]"
+                        pathname === "/" ? "text-primary-100" : "text-[#181818]"
                       }`}
                     >
                       Home
@@ -68,14 +67,38 @@ const MobileNav = () => {
 
                   <li>
                     <Link
-                      href="/products"
-                      className={`inline-block hover:border-b-primary-200 pt-2 ${
-                        location.pathname === "/products"
-                          ? "border-b-2 border-b-primary-200 px-2 py-2 text-black "
+                      href="/addtask"
+                      className={`inline-block  hover:border-b-primary-200 ${
+                        pathname === "/addtask"
+                          ? "  text-primary-100"
                           : "text-[#181818]"
                       }`}
                     >
-                      Products
+                      Add Tasks
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/task"
+                      className={`inline-block  hover:border-b-primary-200 ${
+                        pathname === "/task"
+                          ? "  text-primary-100"
+                          : "text-[#181818]"
+                      }`}
+                    >
+                      Tasks
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/completetask"
+                      className={`inline-block  hover:border-b-primary-200 ${
+                        pathname === "/completetask"
+                          ? "  text-primary-100"
+                          : "text-[#181818]"
+                      }`}
+                    >
+                      Complete Task
                     </Link>
                   </li>
                 </ul>

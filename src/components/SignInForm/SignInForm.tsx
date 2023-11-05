@@ -107,7 +107,7 @@ const SignInForm = () => {
         <div>
           <p className={`font-inter text-base text-[#000] text-center `}>
             Not registered?
-            <Link href={"/auth/signup"}>
+            <Link href={"/signup"}>
               <span className="ml-2  underline">Create an Account</span>
             </Link>
           </p>
