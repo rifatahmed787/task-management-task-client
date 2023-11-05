@@ -1,5 +1,5 @@
+import { IGetUserDetailsRes } from "@/Types/auth.types";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { IGetUserDetailsRes } from "../../../types/auth.types";
 
 interface IUserState {
   id: string | undefined;

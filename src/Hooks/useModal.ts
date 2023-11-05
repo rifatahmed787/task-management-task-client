@@ -1,12 +1,12 @@
 import { useDispatch, useSelector } from "react-redux";
-import { TCurrentModal } from "@/components/ModalsComponent/Register-modal/Register-modal";
+
 import {
   selectCurrentModal,
   setCurrentModal,
 } from "@/Redux/features/ui/uiSlice";
 import { ICurrentModal } from "@/Redux/features/ui/uiSlice.type";
 
-type TModalNames = Required<TCurrentModal>;
+type TModalNames = Required<ICurrentModal>;
 
 export default function useModal(): {
   isOpen: (modalName?: TModalNames) => boolean;
@@ -17,11 +17,11 @@ export default function useModal(): {
   const currentModal = useSelector(selectCurrentModal);
   const dispatch = useDispatch();
 
-  const isOpen = (modalName?: TCurrentModal) =>
-    currentModal?.name === modalName || false;
+  const isOpen = (modalName?: ICurrentModal) =>
+    currentModal === modalName || false;
 
-  const openModal = (name: TCurrentModal, props?: any) => {
-    const modalData: ICurrentModal = { name, props };
+  const openModal = (name: ICurrentModal, props?: any) => {
+    const modalData: ICurrentModal = { props };
     dispatch(setCurrentModal(modalData));
   };
 
