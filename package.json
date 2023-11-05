@@ -23,6 +23,7 @@
     "query-string": "^8.1.0",
     "rc-slider": "^10.3.0",
     "react": "latest",
+    "react-cookie": "^6.1.1",
     "react-countup": "^6.4.2",
     "react-dom": "latest",
     "react-dropzone": "^14.2.3",
