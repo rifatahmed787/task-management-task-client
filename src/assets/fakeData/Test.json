@@ -1,0 +1,1367 @@
+[
+  {
+    "male": [
+      {
+        "id": 1,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MMR-5052",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "red",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 2100,
+        "updatePrice": 1731,
+        "ratings": {
+          "ratingFive": 29,
+          "ratingFour": 48,
+          "ratingThree": 80,
+          "ratingTwo": 50,
+          "ratingOne": 36
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/01/MG-WR-PNJ-00038-fs.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 17,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MMY-5051",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "yellow",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 3100,
+        "updatePrice": 2731,
+        "ratings": {
+          "ratingFive": 34,
+          "ratingFour": 59,
+          "ratingThree": 75,
+          "ratingTwo": 29,
+          "ratingOne": 7
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/RBL-PNJ-00199-1-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 31,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+
+      {
+        "id": 3,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MMP-5053",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "pink",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 3100,
+        "updatePrice": 2731,
+        "ratings": {
+          "ratingFive": 43,
+          "ratingFour": 95,
+          "ratingThree": 57,
+          "ratingTwo": 9,
+          "ratingOne": 21
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/04/MG-WR-PNJ-00035-2.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 23,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MLW-5054",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "white",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 2300,
+        "updatePrice": 1731,
+        "ratings": {
+          "ratingFive": 57,
+          "ratingFour": 73,
+          "ratingThree": 23,
+          "ratingTwo": 31,
+          "ratingOne": 17
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/NG-PNJ-00818-M-1-d-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 31,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MLY-5055",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "yellow",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 2000,
+        "updatePrice": 1600,
+        "ratings": {
+          "ratingFive": 63,
+          "ratingFour": 31,
+          "ratingThree": 17,
+          "ratingTwo": 10,
+          "ratingOne": 3
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/02/NG-PNJ-00759-M-4.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 7,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MLB-5056",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "blue",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 1500,
+        "updatePrice": 1200,
+        "ratings": {
+          "ratingFive": 90,
+          "ratingFour": 39,
+          "ratingThree": 67,
+          "ratingTwo": 20,
+          "ratingOne": 23
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-PNJ-00792-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 31,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MLR-5057",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "red",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 1500,
+        "updatePrice": 1200,
+        "ratings": {
+          "ratingFive": 90,
+          "ratingFour": 39,
+          "ratingThree": 67,
+          "ratingTwo": 20,
+          "ratingOne": 23
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/01/MG-WR-PNJ-00038-fs.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 17,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MMP-5058",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "pink",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 2500,
+        "updatePrice": 2000,
+        "ratings": {
+          "ratingFive": 100,
+          "ratingFour": 80,
+          "ratingThree": 44,
+          "ratingTwo": 29,
+          "ratingOne": 2
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-PNJ-00771-M-18-sfs.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 13,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MMW-5059",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "white",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 2000,
+        "updatePrice": 1750,
+        "ratings": {
+          "ratingFive": 90,
+          "ratingFour": 67,
+          "ratingThree": 44,
+          "ratingTwo": 81,
+          "ratingOne": 11
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/01/NG-PNJ-00784-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 44,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Men’s panjabi",
+        "productId": "GDS-MMW-5010",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Aarong",
+        "colorFamily": "white",
+        "gender": "male",
+        "tags": [
+          "panjabi new",
+          "panjabi best",
+          "panjabi top list",
+          "panjabi eid",
+          "panjabi puja"
+        ],
+        "oldPrice": 2200,
+        "updatePrice": 1850,
+        "ratings": {
+          "ratingFive": 90,
+          "ratingFour": 67,
+          "ratingThree": 44,
+          "ratingTwo": 81,
+          "ratingOne": 11
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/01/MG-WR-PNJ-00036-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 31,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      }
+    ]
+  },
+
+  {
+    "female": [
+      {
+        "id": 11,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FSR-5061",
+        "productSize": "S",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "red",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 2000,
+        "updatePrice": 1750,
+        "ratings": {
+          "ratingFive": 90,
+          "ratingFour": 67,
+          "ratingThree": 44,
+          "ratingTwo": 81,
+          "ratingOne": 11
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/02/RBL-KMZ-00111-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 10,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FMW-5062",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "white",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 2000,
+        "updatePrice": 1750,
+        "ratings": {
+          "ratingFive": 90,
+          "ratingFour": 67,
+          "ratingThree": 44,
+          "ratingTwo": 81,
+          "ratingOne": 11
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/RBL-KMZ-00125-1-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 10,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FLB-5063",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "blue",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 2700,
+        "updatePrice": 2250,
+        "ratings": {
+          "ratingFive": 146,
+          "ratingFour": 94,
+          "ratingThree": 49,
+          "ratingTwo": 15,
+          "ratingOne": 1
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/01/RWR-KMZ-00019-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 17,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FLY-5064",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "yellow",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 2700,
+        "updatePrice": 2250,
+        "ratings": {
+          "ratingFive": 186,
+          "ratingFour": 194,
+          "ratingThree": 149,
+          "ratingTwo": 65,
+          "ratingOne": 30
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-KMZ-00717-5.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 511,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FMR-5065",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "red",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 3700,
+        "updatePrice": 3350,
+        "ratings": {
+          "ratingFive": 186,
+          "ratingFour": 194,
+          "ratingThree": 149,
+          "ratingTwo": 65,
+          "ratingOne": 30
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-KMZ-00712-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 441,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+
+      {
+        "id": 16,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FXLG-5066",
+        "productSize": "XL",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "green",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 3300,
+        "updatePrice": 3000,
+        "ratings": {
+          "ratingFive": 86,
+          "ratingFour": 94,
+          "ratingThree": 49,
+          "ratingTwo": 6,
+          "ratingOne": 2
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/01/RAB-KMZ-00018-d-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 71,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 17,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-F2XLR-5067",
+        "productSize": "2XL",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "red",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 3900,
+        "updatePrice": 3600,
+        "ratings": {
+          "ratingFive": 96,
+          "ratingFour": 74,
+          "ratingThree": 59,
+          "ratingTwo": 71,
+          "ratingOne": 12
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/02/RBL-KMZ-00116-3.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 31,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 18,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-F3XLS-5068",
+        "productSize": "3XL",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "sky",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 2900,
+        "updatePrice": 2500,
+        "ratings": {
+          "ratingFive": 96,
+          "ratingFour": 74,
+          "ratingThree": 59,
+          "ratingTwo": 71,
+          "ratingOne": 12
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-KMZ-00645-1.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 31,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 19,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FSW-5069",
+        "productSize": "S",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "white",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 3300,
+        "updatePrice": 3000,
+        "ratings": {
+          "ratingFive": 196,
+          "ratingFour": 174,
+          "ratingThree": 159,
+          "ratingTwo": 11,
+          "ratingOne": 7
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/04/RBL-KMZ-00129-4.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 311,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 20,
+        "name": "Women’s Single Kamiz",
+        "productId": "GDS-FXXXSW-5070",
+        "productSize": "XXXS",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Deshi Dosh",
+        "colorFamily": "white",
+        "gender": "female",
+        "tags": [
+          "single kamiz new",
+          "single kamiz best",
+          "single kamiz top list",
+          "single kamiz eid",
+          "single kamiz puja"
+        ],
+        "oldPrice": 3117,
+        "updatePrice": 1731,
+        "ratings": {
+          "ratingFive": 311,
+          "ratingFour": 194,
+          "ratingThree": 139,
+          "ratingTwo": 31,
+          "ratingOne": 17
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2022/11/rwr-kmz-00017_3_.jpg",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 611,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Single Kamiz",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      }
+    ]
+  },
+  {
+    "boyKids": [
+      {
+        "id": 21,
+        "name": "Kids panjabi",
+        "productId": "GDS-KSY-5071",
+        "productSize": "S",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "yellow",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 1450,
+        "updatePrice": 900,
+        "ratings": {
+          "ratingFive": 196,
+          "ratingFour": 174,
+          "ratingThree": 159,
+          "ratingTwo": 11,
+          "ratingOne": 7
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/RBL-PNJ-00198-1-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 311,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 22,
+        "name": "Kids panjabi",
+        "productId": "GDS-KMW-5072",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "white",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 650,
+        "updatePrice": 400,
+        "ratings": {
+          "ratingFive": 126,
+          "ratingFour": 114,
+          "ratingThree": 59,
+          "ratingTwo": 81,
+          "ratingOne": 8
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/NG-PNJ-00873-B-2-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 211,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 23,
+        "name": "Kids panjabi",
+        "productId": "GDS-KXLY-5073",
+        "productSize": "XL",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "yellow",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 750,
+        "updatePrice": 450,
+        "ratings": {
+          "ratingFive": 226,
+          "ratingFour": 144,
+          "ratingThree": 89,
+          "ratingTwo": 35,
+          "ratingOne": 11
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/NG-PNJ-00835-3-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 211,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 24,
+        "name": "Kids panjabi",
+        "productId": "GDS-KXLS-5074",
+        "productSize": "XL",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "sky",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 550,
+        "updatePrice": 350,
+        "ratings": {
+          "ratingFive": 156,
+          "ratingFour": 74,
+          "ratingThree": 49,
+          "ratingTwo": 25,
+          "ratingOne": 4
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/NG-PNJ-00849-6-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 211,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 25,
+        "name": "Kids panjabi",
+        "productId": "GDS-K2XLW-5075",
+        "productSize": "2XL",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "white",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 750,
+        "updatePrice": 550,
+        "ratings": {
+          "ratingFive": 156,
+          "ratingFour": 74,
+          "ratingThree": 49,
+          "ratingTwo": 25,
+          "ratingOne": 4
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/NG-PNJ-00532-B-MF-Eid-17-Cost-371-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 211,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 26,
+        "name": "Kids panjabi",
+        "productId": "GDS-KMO-5076",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "origne",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 650,
+        "updatePrice": 570,
+        "ratings": {
+          "ratingFive": 156,
+          "ratingFour": 74,
+          "ratingThree": 49,
+          "ratingTwo": 25,
+          "ratingOne": 4
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/04/NG-PNJ-00451-B.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 211,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 27,
+        "name": "Kids panjabi",
+        "productId": "GDS-KSR-5077",
+        "productSize": "S",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "red",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 1050,
+        "updatePrice": 770,
+        "ratings": {
+          "ratingFive": 86,
+          "ratingFour": 94,
+          "ratingThree": 49,
+          "ratingTwo": 75,
+          "ratingOne": 4
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/06/NG-PNJ-00969-2-scaled.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 131,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Kids panjabi",
+        "productId": "GDS-KLW-5078",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "white",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 1150,
+        "updatePrice": 875,
+        "ratings": {
+          "ratingFive": 86,
+          "ratingFour": 94,
+          "ratingThree": 49,
+          "ratingTwo": 75,
+          "ratingOne": 4
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/02/NG-PNJ-00578.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 131,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 29,
+        "name": "Kids panjabi",
+        "productId": "GDS-KLY-5079",
+        "productSize": "L",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "yellow",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 1450,
+        "updatePrice": 999,
+        "ratings": {
+          "ratingFive": 186,
+          "ratingFour": 94,
+          "ratingThree": 49,
+          "ratingTwo": 75,
+          "ratingOne": 4
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-PNJ-00756-ff.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 191,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Kids panjabi",
+        "productId": "GDS-KMB-5080",
+        "productSize": "M",
+        "aboutProduct": "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials.",
+        "brand": "Rang Bangladesh",
+        "colorFamily": "blue",
+        "gender": "boyKids",
+        "tags": [
+          "Kids panjabi new",
+          "Kids panjabi best",
+          "Kids panjabi top list",
+          "Kids panjabi eid",
+          "Kids panjabi puja"
+        ],
+        "oldPrice": 1550,
+        "updatePrice": 1199,
+        "ratings": {
+          "ratingFive": 86,
+          "ratingFour": 94,
+          "ratingThree": 119,
+          "ratingTwo": 31,
+          "ratingOne": 17
+        },
+        "productImg": "https://rang-bd.com/wp-content/uploads/2023/05/NG-PNJ-00810-4-df-595x595.webp",
+        "productImgMobile": "(akhon faka rakben, but filed ta thakbe)",
+        "productStatus": {
+          "newProduct": false,
+          "stockOut": false,
+          "productQuantity": 191,
+          "bestSelling": false,
+          "productVerified": true
+        },
+        "productCategory": "Kids panjabi",
+
+        "features": [
+          "Lexie is 5’8”, size 0, wearing a 23 Ankle",
+          "Straight fit. Cropped at the ankle. Sits at high waist. Rise: 11”. Inseam: 26.5”. Leg opening: 14” (size 28)",
+          "Rigid: 100% cottonMachine wash cold. Tumble dry low.",
+          "Button fly",
+          "Made in NineTheme",
+          "Safer For The Environment: Our denim factory partner recycles 98% of their water using reverse osmosis filtration and keeps byproducts out of the environment by mixing them with concrete to create building materials."
+        ]
+      }
+    ]
+  }
+]
