@@ -1,7 +1,12 @@
+import AddTask from "@/components/AddTask/AddTask";
 import React from "react";
 
-const AddTask = () => {
-  return <div></div>;
+const AddTaskPage = () => {
+  return (
+    <div>
+      <AddTask />
+    </div>
+  );
 };
 
-export default AddTask;
+export default AddTaskPage;

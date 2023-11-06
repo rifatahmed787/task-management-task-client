@@ -15,10 +15,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { get_error_messages } from "@/lib/Error_message";
 import { useRegisterMutation } from "@/Redux/features/auth/authApi";
+import TextArea from "../UI/Form-items/TextArea";
+import { useAddTaskMutation } from "@/Redux/features/tasks/taskApi";
 
-const SignUpForm = () => {
+const AddTask = () => {
   const { control, handleSubmit } = useForm();
-  const [register, { isError, error, isSuccess }] = useRegisterMutation();
+  const [AddTask, { isError, error, isSuccess }] = useAddTaskMutation();
   const [uploader] = useUploderMutation();
   const [isAlertOpen, setIsAlertOpen] = useState(false);
   const [AlertType, setAlertType] = useState<"success" | "error" | "warning">(
@@ -29,8 +31,9 @@ const SignUpForm = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
+    console.log("this is addtask data", data);
     setIsLoading(true);
-    let imageUrl = "";
+    let cover_image = "";
 
     if (file) {
       const formData = new FormData();
@@ -39,22 +42,21 @@ const SignUpForm = () => {
       try {
         const uploadResponse = await uploader({ data: formData });
         if (uploadResponse && "data" in uploadResponse) {
-          imageUrl = uploadResponse.data.images[0];
+          cover_image = uploadResponse.data.images[0];
         }
       } catch (error) {
         console.error("Error uploading file:", error);
       }
     }
-    console.log(imageUrl);
+    console.log(cover_image);
 
     try {
-      await register({
-        data: {
-          ...data,
-          imageUrl,
-        },
+      await AddTask({
+        title: "",
+        deadline: "",
+        description: "",
+        cover_image,
       });
-      console.log(register);
       setIsLoading(false);
     } catch (error) {
       console.error("Error registering user:", error);
@@ -84,7 +86,7 @@ const SignUpForm = () => {
         {/* Your form content */}
         <div className="flex items-center justify-between gap-3 flex-wrap ">
           <h1 className=" text-4xl  font-anton text-ceter text-primary pt-1">
-            Signup
+            Add Task
           </h1>
 
           <Link href={"/"} className="flex items-center text-primary gap-2 ">
@@ -92,74 +94,55 @@ const SignUpForm = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-2 gap-3">
-            <Controller
-              name="first_name"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <TextInput
-                  label="First Name"
-                  type="text"
-                  onChange={field.onChange}
-                  currentValue={field.value}
-                  placeHolder=""
-                  id="firstName"
-                  htmlFor="firstName"
-                />
-              )}
-            />
-            <Controller
-              name="last_name"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <TextInput
-                  type="text"
-                  placeHolder=""
-                  currentValue={field.value}
-                  onChange={field.onChange}
-                  required={true}
-                  id="lastName"
-                  htmlFor="lastName"
-                  label="Last Name"
-                />
-              )}
-            />
-          </div>
-
           <Controller
-            name="email"
+            name="title"
             control={control}
             defaultValue=""
             render={({ field }) => (
               <TextInput
-                type="email"
+                type="text"
                 placeHolder=""
                 currentValue={field.value}
                 onChange={field.onChange}
                 required={true}
-                id="email"
-                htmlFor="email"
-                label="Email"
+                id="title"
+                htmlFor="title"
+                label="Title"
               />
             )}
           />
 
           <Controller
-            name="password"
+            name="description"
+            control={control}
+            defaultValue=""
+            render={({ field }) => (
+              <TextArea
+                placeHolder="Description"
+                currentValue={field.value}
+                onChange={field.onChange}
+                required={true}
+                id="description"
+                htmlFor="description"
+                label=""
+              />
+            )}
+          />
+
+          <Controller
+            name="deadline"
             control={control}
             defaultValue=""
             render={({ field }) => (
               <TextInput
-                type="password"
+                type="date"
                 placeHolder=""
                 currentValue={field.value}
                 onChange={field.onChange}
                 required={true}
-                id="password"
-                htmlFor="password"
-                label="Password"
+                id="date"
+                htmlFor="date"
+                label=""
               />
             )}
           />
@@ -186,15 +169,6 @@ const SignUpForm = () => {
           isDisabled={isLoading}
         />
 
-        <div>
-          <p className={`font-inter text-base text-[#000] text-center `}>
-            Already have an account?
-            <Link href={"/login"}>
-              <span className="ml-2  underline">Login</span>
-            </Link>
-          </p>
-        </div>
-
         {isAlertOpen && (
           <ToastContainer
             type={AlertType}
@@ -209,4 +183,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default AddTask;

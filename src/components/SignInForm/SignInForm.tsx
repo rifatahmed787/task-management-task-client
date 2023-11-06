@@ -14,6 +14,7 @@ const SignInForm = () => {
   const { control, handleSubmit } = useForm();
   const [login, { isLoading, isError, error, isSuccess }] = useLoginMutation();
   const [isAlertOpen, setIsAlertOpen] = useState(false);
+
   const [AlertType, setAlertType] = useState<"success" | "error" | "warning">(
     "success"
   );
@@ -22,6 +23,7 @@ const SignInForm = () => {
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     try {
       await login({ data });
+      console.log(login);
     } catch (error) {
       console.error(error);
     }
@@ -119,7 +121,7 @@ const SignInForm = () => {
             messages={AlertMessages}
             isAlertOpen={isAlertOpen}
             setIsAlertOpen={setIsAlertOpen}
-            className="absolute  top-10 z-50 left-0 right-0 mx-auto flex justify-center"
+            className="absolute top-10 z-50 left-0 right-0 mx-auto flex justify-center"
           />
         )}
       </form>

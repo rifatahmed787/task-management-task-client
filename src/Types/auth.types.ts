@@ -8,7 +8,7 @@ export type IUser = {
   email: string;
   password: string;
   name: IName;
-  imageUrl: string;
+  imageUrl?: string;
 };
 //auth slice types
 export interface IAuthState {
@@ -25,7 +25,7 @@ export interface IRegister {
   email: string;
   password: string;
   name: IName;
-  imageUrl: string;
+  imageUrl?: string;
 }
 
 export interface IRegisterData {
@@ -72,5 +72,5 @@ export interface IGetUserDetailsRes {
   id: string;
   userName: string;
   email: string;
-  imageUrl: string;
+  imageUrl?: string;
 }

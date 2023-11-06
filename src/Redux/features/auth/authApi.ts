@@ -11,7 +11,7 @@ export const authAPi = apiSlice.injectEndpoints({
       query: ({ data }) => ({
         url: "/auth/signup",
         method: "POST",
-        body: { ...data },
+        body: data,
       }),
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
