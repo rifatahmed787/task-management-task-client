@@ -6,15 +6,43 @@ import { useEffect, useState } from "react";
 import Logo from "../../../assets/Logo/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import MobileNav from "./MobileNav";
-import { useAppSelector } from "@/Hooks/reduxHook";
+import { useAppDispatch, useAppSelector } from "@/Hooks/reduxHook";
+import { useCookies } from "react-cookie";
+import { userLoggedIn, userLoggedOut } from "@/Redux/features/auth/authSlice";
+import { useDispatch } from "react-redux";
 
 const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [previousScroll, setPreviousScroll] = useState(0);
   const pathname = usePathname();
   const { user } = useAppSelector((state) => state.auth);
+  const [_cookies, _setCookie, removeCookie] = useCookies(["auth_details"]);
+  const dispatch = useAppDispatch();
+  const router = useRouter();
+  // handle logout
+  const handleLogout = () => {
+    dispatch(userLoggedOut());
+    localStorage.removeItem("auth_details");
+    localStorage.removeItem("token");
+    removeCookie("auth_details", { path: "/" });
+    router.push("/");
+  };
+
+  useEffect(() => {
+    const token = JSON.parse(localStorage.getItem("token") as string);
+    const user = JSON.parse(localStorage.getItem("auth_details") as string);
+    if (token && user) {
+      dispatch(
+        userLoggedIn({
+          isLoggedIn: true,
+          user,
+          accessToken: token,
+        })
+      );
+    }
+  }, [dispatch]);
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
@@ -141,6 +169,7 @@ const Navbar = () => {
               {user?.email ? (
                 <>
                   <button
+                    onClick={handleLogout}
                     className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 flex items-center gap-1"
                     type="button"
                   >

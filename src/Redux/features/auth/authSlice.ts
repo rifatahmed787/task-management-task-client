@@ -5,13 +5,13 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 // type
 type IState = {
   isLoggedIn: boolean;
-  user: IUser | undefined;
+  user: IUser | null;
   accessToken: string | undefined;
 };
 
 const initialState: IState = {
   isLoggedIn: false,
-  user: undefined,
+  user: null,
   accessToken: undefined,
 };
 
@@ -26,7 +26,7 @@ export const authSlice = createSlice({
     },
     userLoggedOut: (state) => {
       state.isLoggedIn = false;
-      state.user = undefined;
+      state.user = null;
       state.accessToken = undefined;
       window.location.reload();
     },

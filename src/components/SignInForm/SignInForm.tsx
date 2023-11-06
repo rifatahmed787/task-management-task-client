@@ -9,12 +9,13 @@ import TextInput from "../UI/Form-items/TextInput";
 import Button from "../UI/Button";
 import ToastContainer from "../UI/Toast";
 import { FieldValues } from "react-hook-form";
+import { useRouter } from "next/navigation";
 
 const SignInForm = () => {
   const { control, handleSubmit } = useForm();
   const [login, { isLoading, isError, error, isSuccess }] = useLoginMutation();
   const [isAlertOpen, setIsAlertOpen] = useState(false);
-
+  const router = useRouter();
   const [AlertType, setAlertType] = useState<"success" | "error" | "warning">(
     "success"
   );
@@ -40,8 +41,9 @@ const SignInForm = () => {
       setIsAlertOpen(true);
       setAlertType("success");
       setAlertMessages("Logged in successfully");
+      router.push("/task");
     }
-  }, [error, isError, isSuccess]);
+  }, [error, isError, isSuccess, router]);
 
   return (
     <div className={`min-h-screen w-full  flex items-center justify-center`}>

@@ -4,8 +4,9 @@ import authReducer from "../features/auth/authSlice";
 import uiReducer from "../features/ui/uiSlice";
 
 const rootReducer = combineReducers({
-  [apiSlice.reducerPath]: apiSlice.reducer,
   auth: authReducer,
+  [apiSlice.reducerPath]: apiSlice.reducer,
+
   ui: uiReducer,
 });
 

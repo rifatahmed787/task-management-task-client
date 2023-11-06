@@ -7,6 +7,7 @@ import ToastContainer from "./Toast";
 import ICONS from "../shared/Icons/AllIcons";
 import { useAppSelector } from "@/Hooks/reduxHook";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const TaskCard = ({ task }: { task: ITask }) => {
   // Alert State
@@ -51,23 +52,16 @@ const TaskCard = ({ task }: { task: ITask }) => {
     }
   }, [error, isError, isSuccess, removeCard?.message]);
 
-  // card Click Handler
-  const cardClickHandler = () => {
-    router.push(`/tasks/${task._id}`);
-  };
-
   return (
     <div className="relative w-11/12 md:w-full h-64 border-2 rounded-lg border-primary-100">
       <div>
         <h1 className="text-base md:text-xl font-bold p-3">{task.title}</h1>
         <p className="px-3">
           {task.description.slice(0, 50)}.....{" "}
-          <button
-            onClick={() => cardClickHandler()}
-            className="text-primary-100"
-          >
-            Read More
-          </button>
+          <Link href={`/task/${task._id}`}>
+            {" "}
+            <button className="text-primary-100">Read More</button>
+          </Link>
         </p>
         <h3 className="text-base font-semibold p-3">
           Deadline: {task.deadline}

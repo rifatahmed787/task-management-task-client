@@ -38,7 +38,7 @@ const TaskList = () => {
   console.log(tasksList);
 
   return (
-    <div className="bg-[#FAF9F5] min-h-[70vh] px-4 py-20">
+    <div className="bg-[#FAF9F5] min-h-[100vh] px-4 py-20">
       <div className="max-w-[1170px] mx-auto">
         {/* Filter & add book button (if needed) */}
         {/* <FilterBook filter={filter} setFilter={setFilter} /> */}

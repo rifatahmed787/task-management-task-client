@@ -15,9 +15,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { get_error_messages } from "@/lib/Error_message";
 import { useRegisterMutation } from "@/Redux/features/auth/authApi";
+import { useRouter } from "next/navigation";
 
 const SignUpForm = () => {
   const { control, handleSubmit } = useForm();
+  const router = useRouter();
   const [register, { isError, error, isSuccess }] = useRegisterMutation();
   const [uploader] = useUploderMutation();
   const [isAlertOpen, setIsAlertOpen] = useState(false);
@@ -72,8 +74,9 @@ const SignUpForm = () => {
       setIsAlertOpen(true);
       setAlertType("success");
       setAlertMessages("Signed up successfully");
+      router.push("/task");
     }
-  }, [error, isError, isSuccess]);
+  }, [error, isError, isSuccess, router]);
 
   return (
     <div className={`min-h-screen w-full  flex items-center justify-center`}>

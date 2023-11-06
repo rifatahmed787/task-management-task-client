@@ -17,6 +17,14 @@ export const authAPi = apiSlice.injectEndpoints({
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
           const result = await queryFulfilled;
+          localStorage.setItem(
+            "auth_details",
+            JSON.stringify(result?.data?.data?.user_details)
+          );
+          localStorage.setItem(
+            "token",
+            JSON.stringify(result?.data?.data?.accessToken)
+          );
           console.log("the query result", result);
           cookies.set(
             "auth_details",
@@ -27,6 +35,7 @@ export const authAPi = apiSlice.injectEndpoints({
             }),
             { path: "/", maxAge: 6000 }
           );
+
           dispatch(
             userLoggedIn({
               isLoggedIn: true,
@@ -51,7 +60,14 @@ export const authAPi = apiSlice.injectEndpoints({
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {
           const result = await queryFulfilled;
-
+          localStorage.setItem(
+            "auth_details",
+            JSON.stringify(result?.data?.data?.user_details)
+          );
+          localStorage.setItem(
+            "token",
+            JSON.stringify(result?.data?.data?.accessToken)
+          );
           cookies.set(
             "auth_details",
             JSON.stringify({
