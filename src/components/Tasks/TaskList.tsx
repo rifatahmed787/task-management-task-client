@@ -44,7 +44,16 @@ const TaskList = () => {
         {/* <FilterBook filter={filter} setFilter={setFilter} /> */}
         {/* Tasks list */}
         {isLoading ? (
-          <CardSkeleton />
+          <div className="mt-5 w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center gap-10 sm:gap-10">
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+            <CardSkeleton />
+          </div>
         ) : (
           <div className="mt-5 w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-items-center items-center gap-10 sm:gap-10">
             {!isError &&

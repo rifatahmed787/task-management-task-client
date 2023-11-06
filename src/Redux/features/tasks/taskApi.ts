@@ -29,7 +29,7 @@ export const bookApi = apiSlice.injectEndpoints({
 
     // Add Task
     addTask: builder.mutation({
-      query: (data: ITask) => ({
+      query: ({ data }) => ({
         url: `/tasks`,
         method: "POST",
         body: data,

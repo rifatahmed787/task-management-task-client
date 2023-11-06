@@ -94,7 +94,7 @@ const SignUpForm = () => {
         <div className="flex flex-col gap-6">
           <div className="grid grid-cols-2 gap-3">
             <Controller
-              name="first_name"
+              name="name.firstName"
               control={control}
               defaultValue=""
               render={({ field }) => (
@@ -110,7 +110,7 @@ const SignUpForm = () => {
               )}
             />
             <Controller
-              name="last_name"
+              name="name.lastName"
               control={control}
               defaultValue=""
               render={({ field }) => (

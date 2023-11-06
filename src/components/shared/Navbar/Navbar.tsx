@@ -8,11 +8,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
+import { useAppSelector } from "@/Hooks/reduxHook";
 
 const Navbar = () => {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [previousScroll, setPreviousScroll] = useState(0);
   const pathname = usePathname();
+  const { user } = useAppSelector((state) => state.auth);
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
@@ -64,53 +66,102 @@ const Navbar = () => {
               </Link>
             </li>
 
-            <li>
-              <Link
-                href="/addtask"
-                className={`inline-block  hover:border-b-primary-200 ${
-                  pathname === "/addtask"
-                    ? "  text-primary-100"
-                    : "text-[#181818]"
-                }`}
-              >
-                Add Tasks
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/task"
-                className={`inline-block  hover:border-b-primary-200 ${
-                  pathname === "/task" ? "  text-primary-100" : "text-[#181818]"
-                }`}
-              >
-                Tasks
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/completetask"
-                className={`inline-block  hover:border-b-primary-200 ${
-                  pathname === "/completetask"
-                    ? "  text-primary-100"
-                    : "text-[#181818]"
-                }`}
-              >
-                Complete Task
-              </Link>
-            </li>
+            {user?.email ? (
+              <>
+                {" "}
+                <li>
+                  <Link
+                    href="/addtask"
+                    className={`inline-block  hover:border-b-primary-200 ${
+                      pathname === "/addtask"
+                        ? "  text-primary-100"
+                        : "text-[#181818]"
+                    }`}
+                  >
+                    Add Tasks
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/task"
+                    className={`inline-block  hover:border-b-primary-200 ${
+                      pathname === "/task"
+                        ? "  text-primary-100"
+                        : "text-[#181818]"
+                    }`}
+                  >
+                    Tasks
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/completetask"
+                    className={`inline-block  hover:border-b-primary-200 ${
+                      pathname === "/completetask"
+                        ? "  text-primary-100"
+                        : "text-[#181818]"
+                    }`}
+                  >
+                    Complete Task
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog"
+                    className={`inline-block  hover:border-b-primary-200 ${
+                      pathname === "/blog"
+                        ? "  text-primary-100"
+                        : "text-[#181818]"
+                    }`}
+                  >
+                    Blog
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link
+                    href="/blog"
+                    className={`inline-block  hover:border-b-primary-200 ${
+                      pathname === "/blog"
+                        ? "  text-primary-100"
+                        : "text-[#181818]"
+                    }`}
+                  >
+                    Blog
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
 
           <div className="hidden md:block">
             <div className="flex gap-4">
-              <Link href="/signup">
-                <button
-                  className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 flex items-center gap-1"
-                  type="button"
-                >
-                  <Icon icon="mdi:user" width={25} />
-                  Signin
-                </button>
-              </Link>
+              {user?.email ? (
+                <>
+                  <button
+                    className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 flex items-center gap-1"
+                    type="button"
+                  >
+                    <Icon icon="material-symbols:logout-rounded" width={25} />
+                    Logout
+                  </button>
+                </>
+              ) : (
+                <>
+                  {" "}
+                  <Link href="/login">
+                    <button
+                      className="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700 flex items-center gap-1"
+                      type="button"
+                    >
+                      <Icon icon="mdi:user" width={25} />
+                      Signin
+                    </button>
+                  </Link>
+                </>
+              )}
             </div>
           </div>
 

@@ -14,7 +14,6 @@ import ICONS from "@/components/shared/Icons/AllIcons";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { get_error_messages } from "@/lib/Error_message";
-import { useRegisterMutation } from "@/Redux/features/auth/authApi";
 import TextArea from "../UI/Form-items/TextArea";
 import { useAddTaskMutation } from "@/Redux/features/tasks/taskApi";
 
@@ -52,10 +51,11 @@ const AddTask = () => {
 
     try {
       await AddTask({
-        title: "",
-        deadline: "",
-        description: "",
-        cover_image,
+        data: {
+          ...data,
+          done: false,
+          cover_image,
+        },
       });
       setIsLoading(false);
     } catch (error) {
