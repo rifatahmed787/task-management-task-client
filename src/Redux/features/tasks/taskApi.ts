@@ -1,5 +1,5 @@
 import { apiSlice } from "@/Redux/api/apiSlice";
-import { ITask } from "@/Types/task";
+
 import { ParamSerialization } from "@/lib/ParamsSerialization";
 
 export const bookApi = apiSlice.injectEndpoints({
@@ -9,6 +9,15 @@ export const bookApi = apiSlice.injectEndpoints({
       query: (args: Record<string, unknown>) => {
         const query = args ? ParamSerialization(args) : "";
         return `/tasks?${query}`;
+      },
+      providesTags: ["tasks"],
+    }),
+
+    // get complete tasks
+    getCompleteTasks: builder.query({
+      query: (args: Record<string, unknown>) => {
+        const query = args ? ParamSerialization(args) : "";
+        return `/tasks/complete/${query}`;
       },
       providesTags: ["tasks"],
     }),
@@ -73,19 +82,16 @@ export const bookApi = apiSlice.injectEndpoints({
 
     // edit task
     editTask: builder.mutation({
-      query: ({ taskID, task_data }) => ({
+      query: ({ taskID, data }) => ({
         url: `/tasks/${taskID}`,
         method: "PATCH",
-        body: { ...task_data },
+        body: { ...data },
       }),
       invalidatesTags: ["filteringItems", "tasks"],
 
-      async onQueryStarted(
-        { taskID, task_data },
-        { dispatch, queryFulfilled }
-      ) {
+      async onQueryStarted({ taskID, data }, { dispatch, queryFulfilled }) {
         // test part
-        if (!task_data) {
+        if (!data) {
           //
         }
 
@@ -106,6 +112,38 @@ export const bookApi = apiSlice.injectEndpoints({
         }
       },
     }),
+
+    taskToggle: builder.mutation({
+      query: ({ taskID }) => ({
+        url: `/tasks/${taskID}`,
+        method: "PUT",
+      }),
+      invalidatesTags: ["filteringItems", "tasks"],
+
+      async onQueryStarted({ taskID }, { dispatch, queryFulfilled }) {
+        try {
+          const { data: task_data } = await queryFulfilled;
+
+          // const patchResult =
+          if (task_data) {
+            //
+          }
+          dispatch(
+            bookApi.util.updateQueryData("getTaskDetails", taskID, (draft) => {
+              return draft.filter(
+                (item: {
+                  data: {
+                    _id: string;
+                  };
+                }) => item.data?._id != taskID
+              );
+            })
+          );
+        } catch {
+          //
+        }
+      },
+    }),
   }),
 });
 
@@ -116,4 +154,6 @@ export const {
   useEditTaskMutation,
   useGetTaskDetailsQuery,
   useGetTasksQuery,
+  useGetCompleteTasksQuery,
+  useTaskToggleMutation,
 } = bookApi;

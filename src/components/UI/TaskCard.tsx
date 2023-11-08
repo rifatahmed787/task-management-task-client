@@ -1,7 +1,10 @@
 import { ITask } from "@/Types/task";
 import React, { useEffect, useState } from "react";
 import { Icon } from "@iconify/react";
-import { useDeleteTaskMutation } from "@/Redux/features/tasks/taskApi";
+import {
+  useDeleteTaskMutation,
+  useTaskToggleMutation,
+} from "@/Redux/features/tasks/taskApi";
 import { get_error_messages } from "@/lib/Error_message";
 import ToastContainer from "./Toast";
 import ICONS from "../shared/Icons/AllIcons";
@@ -29,10 +32,23 @@ const TaskCard = ({ task }: { task: ITask }) => {
     },
   ] = useDeleteTaskMutation();
 
+  const [
+    taskToggle,
+    { data: toggle, isLoading, isError: toggleError, isSuccess: toggleSuscess },
+  ] = useTaskToggleMutation();
+
   const removeHandler = (e: { stopPropagation: () => void }) => {
     e.stopPropagation();
 
     deleteTaskCard({
+      taskID: task?._id,
+      user_id: user?._id,
+    });
+  };
+
+  const toggleHandler = (e: { stopPropagation: () => void }) => {
+    e.stopPropagation();
+    taskToggle({
       taskID: task?._id,
       user_id: user?._id,
     });
@@ -52,28 +68,61 @@ const TaskCard = ({ task }: { task: ITask }) => {
     }
   }, [error, isError, isSuccess, removeCard?.message]);
 
+  // error and success handling for complete task
+  useEffect(() => {
+    if (toggleError && error && "data" in error) {
+      setIsAlertOpen(true);
+      setAlertType("error");
+      const error_messages = get_error_messages(error);
+      setAlertMessages(error_messages);
+    } else if (toggleSuscess) {
+      setIsAlertOpen(true);
+      setAlertType("success");
+      setAlertMessages(toggle?.message);
+    }
+  }, [error, toggleError, toggleSuscess, toggle?.message]);
+
   return (
     <div className="relative w-11/12 md:w-full h-64 border-2 rounded-lg border-primary-100">
       <div>
-        <h1 className="text-base md:text-xl font-bold p-3">{task.title}</h1>
+        <h1
+          className={`text-base md:text-lg font-bold p-3 ${
+            task?.done ? "line-through" : ""
+          }`}
+        >
+          {task.title}
+        </h1>
         <p className="px-3">
-          {task.description.slice(0, 50)}.....{" "}
-          <Link href={`/task/${task._id}`}>
+          {task.description.slice(0, 30)}.....{" "}
+          <Link href={`/task/${task?._id}`}>
             {" "}
-            <button className="text-primary-100">Read More</button>
+            <button className="text-primary-100 font-bold">Read More</button>
           </Link>
         </p>
         <h3 className="text-base font-semibold p-3">
           Deadline: {task.deadline}
         </h3>
         <div className="font-semibold px-3">
-          {task.done ? <h3>Status: Completed</h3> : <h3>Status: Pending</h3>}
+          {task?.done ? <h3>Status: Completed</h3> : <h3>Status: Pending</h3>}
         </div>
         <div className="flex justify-end px-3 pt-3 items-center gap-5">
-          <button className="border border-primary-100 rounded-md text-green-600">
-            <Icon icon="line-md:edit" width={25} />
-          </button>
-          <button className="border border-primary-100 rounded-md text-green-600">
+          {task?.done ? (
+            ""
+          ) : (
+            <>
+              {" "}
+              <Link href={`/task/updatetask/${task?._id}`}>
+                <button className="border border-primary-100 rounded-md text-green-600">
+                  <Icon icon="line-md:edit" width={25} />
+                </button>
+              </Link>
+            </>
+          )}
+
+          <button
+            onClick={toggleHandler}
+            className="border border-primary-100 rounded-md text-green-600"
+          >
             <Icon icon="carbon:task-complete" width={25} />
           </button>
           <button

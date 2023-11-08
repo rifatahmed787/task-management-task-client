@@ -41,7 +41,7 @@ const SignInForm = () => {
       setIsAlertOpen(true);
       setAlertType("success");
       setAlertMessages("Logged in successfully");
-      router.push("/task");
+      router.push("/addtask");
     }
   }, [error, isError, isSuccess, router]);
 

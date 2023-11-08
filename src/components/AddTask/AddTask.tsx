@@ -73,7 +73,7 @@ const AddTask = () => {
     } else if (isSuccess) {
       setIsAlertOpen(true);
       setAlertType("success");
-      setAlertMessages("Signed up successfully");
+      setAlertMessages("Task created successfully");
     }
   }, [error, isError, isSuccess]);
 

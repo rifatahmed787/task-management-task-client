@@ -26,7 +26,7 @@ const TaskDetails = ({ params }: any) => {
   const task_details: ITask = task_details_data?.data;
 
   return (
-    <div>
+    <div className="w-11/12 md:w-4/5 mt-16 mx-auto">
       {isLoading ? (
         <>
           <CardSkeleton />

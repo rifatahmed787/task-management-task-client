@@ -1,26 +1,26 @@
 "use client";
+
+import { ITask } from "@/Types/task";
+import React, { useEffect, useState } from "react";
+import Button from "../UI/Button";
+import ToastContainer from "../UI/Toast";
+import FileInput from "../UI/Form-items/FileInput";
 import {
-  useForm,
   Controller,
-  SubmitHandler,
   FieldValues,
+  SubmitHandler,
+  useForm,
 } from "react-hook-form";
 import { useUploderMutation } from "@/Redux/features/upload/uploadApi";
-import Button from "@/components/UI/Button";
-import FileInput from "@/components/UI/Form-items/FileInput";
-import TextInput from "@/components/UI/Form-items/TextInput";
-import ToastContainer from "@/components/UI/Toast";
-import ICONS from "@/components/shared/Icons/AllIcons";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEditTaskMutation } from "@/Redux/features/tasks/taskApi";
 import { get_error_messages } from "@/lib/Error_message";
-import { useRegisterMutation } from "@/Redux/features/auth/authApi";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import ICONS from "../shared/Icons/AllIcons";
+import TextInput from "../UI/Form-items/TextInput";
+import TextArea from "../UI/Form-items/TextArea";
 
-const SignUpForm = () => {
-  const { control, handleSubmit } = useForm();
-  const router = useRouter();
-  const [register, { isError, error, isSuccess }] = useRegisterMutation();
+const EditTaskForm = ({ task_details }: { task_details: ITask }) => {
+  const { control, handleSubmit, setValue } = useForm();
   const [uploader] = useUploderMutation();
   const [isAlertOpen, setIsAlertOpen] = useState(false);
   const [AlertType, setAlertType] = useState<"success" | "error" | "warning">(
@@ -29,10 +29,18 @@ const SignUpForm = () => {
   const [AlertMessages, setAlertMessages] = useState("");
   const [file, setFile] = useState<File | undefined>();
   const [isLoading, setIsLoading] = useState(false);
+  const [EditTask, { isError, error, isSuccess }] = useEditTaskMutation();
+
+  // Set default values for the form fields based on the task_details
+  useEffect(() => {
+    setValue("title", task_details?.title || "");
+    setValue("description", task_details?.description || "");
+    setValue("deadline", task_details?.deadline || "");
+  }, [task_details, setValue]);
 
   const onSubmit: SubmitHandler<FieldValues> = async (data) => {
     setIsLoading(true);
-    let imageUrl = "";
+    let cover_image = "";
 
     if (file) {
       const formData = new FormData();
@@ -41,29 +49,29 @@ const SignUpForm = () => {
       try {
         const uploadResponse = await uploader({ data: formData });
         if (uploadResponse && "data" in uploadResponse) {
-          imageUrl = uploadResponse.data.images[0];
+          cover_image = uploadResponse.data.images[0];
         }
       } catch (error) {
         console.error("Error uploading file:", error);
       }
     }
-    console.log(imageUrl);
 
     try {
-      await register({
+      await EditTask({
         data: {
           ...data,
-          imageUrl,
+          done: false,
+          cover_image,
         },
+        taskID: task_details._id,
       });
-      console.log(register);
       setIsLoading(false);
     } catch (error) {
-      console.error("Error registering user:", error);
+      console.error("Error updating task:", error);
     }
   };
 
-  //error and success handlaing
+  // Error and success handling
   useEffect(() => {
     if (isError && error && "data" in error) {
       setIsAlertOpen(true);
@@ -73,10 +81,9 @@ const SignUpForm = () => {
     } else if (isSuccess) {
       setIsAlertOpen(true);
       setAlertType("success");
-      setAlertMessages("Signed up successfully");
-      router.push("/addtask");
+      setAlertMessages("Task updated successfully");
     }
-  }, [error, isError, isSuccess, router]);
+  }, [error, isError, isSuccess]);
 
   return (
     <div className={`min-h-screen w-full  flex items-center justify-center`}>
@@ -86,8 +93,8 @@ const SignUpForm = () => {
       >
         {/* Your form content */}
         <div className="flex items-center justify-between gap-3 flex-wrap ">
-          <h1 className=" text-4xl  font-anton text-ceter text-primary pt-1">
-            Signup
+          <h1 className="text-4xl font-anton text-center text-primary pt-1">
+            Edit Task
           </h1>
 
           <Link href={"/"} className="flex items-center text-primary gap-2 ">
@@ -95,74 +102,55 @@ const SignUpForm = () => {
           </Link>
         </div>
         <div className="flex flex-col gap-6">
-          <div className="grid grid-cols-2 gap-3">
-            <Controller
-              name="name.firstName"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <TextInput
-                  label="First Name"
-                  type="text"
-                  onChange={field.onChange}
-                  currentValue={field.value}
-                  placeHolder=""
-                  id="firstName"
-                  htmlFor="firstName"
-                />
-              )}
-            />
-            <Controller
-              name="name.lastName"
-              control={control}
-              defaultValue=""
-              render={({ field }) => (
-                <TextInput
-                  type="text"
-                  placeHolder=""
-                  currentValue={field.value}
-                  onChange={field.onChange}
-                  required={true}
-                  id="lastName"
-                  htmlFor="lastName"
-                  label="Last Name"
-                />
-              )}
-            />
-          </div>
-
           <Controller
-            name="email"
+            name="title"
             control={control}
-            defaultValue=""
+            defaultValue={task_details?.title}
             render={({ field }) => (
               <TextInput
-                type="email"
+                type="text"
                 placeHolder=""
                 currentValue={field.value}
                 onChange={field.onChange}
                 required={true}
-                id="email"
-                htmlFor="email"
-                label="Email"
+                id="title"
+                htmlFor="title"
+                label="Title"
               />
             )}
           />
 
           <Controller
-            name="password"
+            name="description"
             control={control}
-            defaultValue=""
+            defaultValue={task_details?.description}
+            render={({ field }) => (
+              <TextArea
+                placeHolder="Description"
+                currentValue={field.value}
+                onChange={field.onChange}
+                required={true}
+                id="description"
+                htmlFor="description"
+                label=""
+              />
+            )}
+          />
+
+          <Controller
+            name="deadline"
+            control={control}
+            defaultValue={task_details?.deadline}
             render={({ field }) => (
               <TextInput
-                type="password"
+                type="date"
                 placeHolder=""
                 currentValue={field.value}
                 onChange={field.onChange}
                 required={true}
-                id="password"
-                htmlFor="password"
-                label="Password"
+                id="date"
+                htmlFor="date"
+                label=""
               />
             )}
           />
@@ -189,15 +177,6 @@ const SignUpForm = () => {
           isDisabled={isLoading}
         />
 
-        <div>
-          <p className={`font-inter text-base text-[#000] text-center `}>
-            Already have an account?
-            <Link href={"/login"}>
-              <span className="ml-2  underline">Login</span>
-            </Link>
-          </p>
-        </div>
-
         {isAlertOpen && (
           <ToastContainer
             type={AlertType}
@@ -212,4 +191,4 @@ const SignUpForm = () => {
   );
 };
 
-export default SignUpForm;
+export default EditTaskForm;
